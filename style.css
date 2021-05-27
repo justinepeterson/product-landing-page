@@ -1,0 +1,20 @@
+#header{
+    position: fixed;
+    background-color: crimson;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: white;
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+nav a{
+    text-decoration: none;
+}

@@ -1,25 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <img src="data:image/png;base64,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" alt="" srcset="">
-        <nav id="nav-bar">
-            <a href="#to-the-crazy-ones">to the Crazy Ones</a>
-            <a href="#contact">contact</a>
-            <a href="#about">About</a>
-        </nav>
+      <img
+        id="header-img"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPeHhY2HGyl1Ckwtzkh9NsCCxrhbKFP0hBjKnIOTWRFrzkD1PE-CX3HX9D5Nkgqaiwkkg&usqp=CAU"
+        alt=""
+        srcset=""
+      />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#to-the-crazy-ones">to the Crazy Ones</a>
+        <a class="nav-link" href="#contact">contact</a>
+        <a class="nav-link" href="#about">About</a>
+      </nav>
     </header>
-    <div>
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/-z4NS2zdrZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      <div>
+          <img src="/Apple-iPhone-11-1.jpg" alt="" srcset="">
+          <img src="/download.jpeg" alt="" srcset="">
+          <img src="/images.jpeg" alt="" srcset="">
+      </div>
+    <div id="to-the-crazy-ones">
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/-z4NS2zdrZc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
-    <form id="form">
-        <input type="email" name="email" id="email" placeholder="Enter your email">
-    </form>
-</body>
+    
+    <footer id="about">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+        quisquam vel ipsum beatae cumque aut veniam inventore! Laborum nesciunt
+        tempora alias labore beatae recusandae quia officiis autem nisi delectus.
+        Magni at rerum distinctio suscipit atque dolorem magnam accusantium
+        laborum corporis molestias earum culpa dignissimos commodi consequuntur
+        ullam, sapiente neque, ea unde. Vero, modi nisi! Corrupti ipsa repellat
+        atque tempora earum quam possimus voluptatibus. Esse aspernatur et quis
+        consectetur obcaecati! Incidunt eum, ipsam ad quo esse commodi aliquid
+        tempore aspernatur perferendis impedit porro consectetur beatae dolorem
+        sapiente? Repudiandae reprehenderit dicta aliquam, at assumenda eligendi
+        ea unde consequuntur odit perferendis magni. Nesciunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+        quisquam vel ipsum beatae cumque aut veniam inventore! Laborum nesciunt
+        tempora alias labore beatae recusandae quia officiis autem nisi delectus.
+        Magni at rerum distinctio suscipit atque dolorem magnam accusantium
+        laborum corporis molestias earum culpa dignissimos commodi consequuntur
+        ullam, sapiente neque, ea unde. Vero, modi nisi! Corrupti ipsa repellat
+        atque tempora earum quam possimus voluptatibus. Esse aspernatur et quis
+        consectetur obcaecati! Incidunt eum, ipsam ad quo esse commodi aliquid
+        tempore aspernatur perferendis impedit porro consectetur beatae dolorem
+        sapiente? Repudiandae reprehenderit dicta aliquam, at assumenda eligendi
+        ea unde consequuntur odit perferendis magni. Nesciunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+        quisquam vel ipsum beatae cumque aut veniam inventore! Laborum nesciunt
+        tempora alias labore beatae recusandae quia officiis autem nisi delectus.
+        Magni at rerum distinctio suscipit atque dolorem magnam accusantium
+        laborum corporis molestias earum culpa dignissimos commodi consequuntur
+        ullam, sapiente neque, ea unde. Vero, modi nisi! Corrupti ipsa repellat
+        atque tempora earum quam possimus voluptatibus. Esse aspernatur et quis
+        consectetur obcaecati! Incidunt eum, ipsam ad quo esse commodi aliquid
+        tempore aspernatur perferendis impedit porro consectetur beatae dolorem
+        sapiente? Repudiandae reprehenderit dicta aliquam, at assumenda eligendi
+        ea unde consequuntur odit perferendis magni. Nesciunt?
+      </p>
+    </footer>
+    <div id="contact">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <input type="submit" id="submit" />
+        </form>
+      </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
