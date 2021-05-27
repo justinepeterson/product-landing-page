@@ -1,21 +1,12 @@
-.logo {width: 60vw;
-  
-    @media (max-width: 600px) {
-      body {
-          background-color: lightblue;
-      }
-  }
-}
+@media (min-height: 150px) { 
 #header{
     position: fixed;
-    background-color: crimson;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 nav{
-    background-color: white;
     margin: 40px;
     display: flex;
     justify-content: space-between;
@@ -24,4 +15,5 @@ nav{
 
 nav a{
     text-decoration: none;
+}
 }
